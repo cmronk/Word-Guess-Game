@@ -1,0 +1,48 @@
+body h3, body h4, body h2, p, #wordToGuess {
+    
+    font-family: 'Cormorant Unicase', serif;;
+    font-weight: bold;
+    max-width: 960px;
+    text-align: center; 
+}
+
+.jumbotron-fluid h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 5px;
+}
+
+.jumbotron-fluid h3 {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+
+body h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    max-width: 960px;
+    text-align: center;
+}
+
+body {
+    background-image: url("../images/background.jpeg");
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+
+}
+
+html {
+    background-image: url("../images/background.jpeg");
+}
+
+.container {
+  
+    padding: 10px;
+
+}
+
+.jumbotron-fluid, .card {
+    opacity: 0.75;
+}

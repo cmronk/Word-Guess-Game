@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lord of the Rings Word Guess</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="jumbotron jumbotron-fluid">
+                            <h1>Welcome to the Shire!</h1>
+                            <h3>Press any letter to guess and start your journey.</h3>
+                        </div>    
+                    </div>
+                </div>      
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Who am I?</h1>
+                            </div>
+                            <div class="card-body">
+                                <h2 id="wordToGuess"></h2>
+                            </div>
+                        </div>  
+                    </div>    
+                </div>        
+            </div>
+                
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Wrong Guesses: <br><br><span id="wrongGuesses"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Guesses Left: <br><br><span id="guessesLeft"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Games won: <br><br><span id="winCount"></span></h3>
+                            </div>
+                        </div> 
+                    </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Games lost: <br><br><span id="lossCount"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
