@@ -16,13 +16,11 @@ function startGame () {
     lettersInWord = answer.split("");
     underscores = lettersInWord.length;  
     document.getElementById("wrongGuesses").innerHTML = ("__________");
-    
  
     // reset
     guessesLeft = 10;
     fillBlanks = [];
     wrongGuesses = [];
-    
 
     // blanks
     for (var i = 0; i <underscores; i++) {
@@ -35,7 +33,6 @@ function startGame () {
     document.getElementById("winCount").innerHTML = winCount;
     document.getElementById("lossCount").innerHTML = lossCount;
 }
-
 
 function checkLetters(letter) {
     var isLetterInWord = false;
@@ -54,7 +51,6 @@ function checkLetters(letter) {
                 fillBlanks[j] = letter;
             }
         }
-       
     }
     else {
         wrongGuesses.push(letter);
@@ -90,41 +86,11 @@ function endRound() {
 
 }
 
-
 startGame();
-
 
 // get userguess
 document.onkeyup = function(event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(letterGuessed);
     endRound();
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
